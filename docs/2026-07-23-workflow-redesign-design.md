@@ -122,6 +122,8 @@ star 越多 → 画像越准、few-shot 越对味。
 **新建 6 个**：`rss_fetch` / `merge_and_dedupe` / `render_inbox` / `process_starred` / `learn_profile` / few-shot sampler（外加 setup/check_config 扩展）。
 **退役**：RSS Dashboard 插件（fetch 角色被 `rss_fetch` 取代，star 行为由 markdown 收件箱保留）+ `rss_to_orient.py`（被 `process_starred` 取代）。
 
+**迁移（隐私/可分享）**：现有 `references/fanfy-housing-fiscal.md` 是个人画像，**当前已被 git 跟踪**（初次 `git init` 时带入）。实现时迁到 `config/profile.md`（gitignore）并 `git rm --cached references/fanfy-housing-fiscal.md` 从跟踪移除；`references/` 只留 `example-profile.md` 模板。因仓库尚无 remote、未 push，无需 rewrite 历史。
+
 > 现有 frontier-tracker 的 `_archived/` 旧脚本不参与，维持现状。
 
 ## 9. SKILL.md 更新点
