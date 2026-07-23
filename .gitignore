@@ -1,0 +1,14 @@
+# Local secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Runtime data is derived, not source
+outputs/data/
+
+# Runtime state (user-specific, not shipped)
+state/
+outputs/
+.DS_Store
